@@ -6,3 +6,7 @@
     height: 20px;
     width: 22px;
 }
+.hotel-listing > a > img{
+    height: 200px;
+    width: 250px;
+}

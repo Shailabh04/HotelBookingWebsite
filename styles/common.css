@@ -1,0 +1,16 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main-container{
+    height: auto;
+    width: auto;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.social-logo{
+    height: 20px;
+    width: 22px;
+}
