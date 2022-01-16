@@ -13,14 +13,27 @@
 
         <!--Header Section-->
         <header>
-            <img src="assests/images/logo.png" alt="logo" height="100px" width="150px">
-            <a href="login.html" target="_blank">Login</a>
+            <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="100px" width="150px"></a>
+            <a href="login.html" target="_self">Login</a>
         </header>
 
         <!--Contant Section-->
         <div class="content">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" srcset="">
-            <a href="payment.html"><p>Book Now</p></a>
+            <form action="payment.html" method="GET">
+                <label for="adult">Adults: </label>
+                <input type="number" name="adult" value="1" min="1"><br>
+                <label for="name">Name: </label>
+                <input type="text" name="name" required><br>
+                <label for="from-date">From Date: </label>
+                <input type="date" name="from-date" required><br>
+                <label for="to-date">To Date: </label>
+                <input type="date" name="to-date" required><br>
+                <label for="price">Total: </label>
+                <input readonly name="price"><br>
+                <button type="submit">Book Now</button>
+            </form>
+            
             <h2>Radisson Blu Hotel</h2>
             <p>RATING</p>
             <P>2 Star</P>
@@ -38,7 +51,7 @@
 
         <!--Footer Section-->
         <footer>
-            <div class="contact"><a href="contact.html" target="_blank">Contact Us</a></div>
+            <div class="contact"><a href="contact.html" target="_self">Contact Us</a></div>
             
             <div class="social-links">
                 <a href="https://www.facebook.com/" target="_blank"><img class="social-logo" src="assests/images/facebook.png" alt="facebook" srcset=""></a>
