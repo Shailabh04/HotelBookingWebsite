@@ -1,4 +1,19 @@
+.images{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15% 0 15%;
+}
 .image{
     height: 150px;
     width: 150px;
+    padding: 4%;
+    border-radius: 25%;
+}
+.search-bar{
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 380px;
 }

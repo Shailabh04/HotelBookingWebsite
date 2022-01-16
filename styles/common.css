@@ -1,6 +1,9 @@
 html, body{
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #e0e0e0;
 }
 .main-container{
     height: auto;
@@ -13,4 +16,10 @@ html, body{
 .social-logo{
     height: 20px;
     width: 22px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
 }
