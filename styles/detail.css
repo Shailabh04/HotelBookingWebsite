@@ -1,3 +1,9 @@
+main{
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .image{
     height: 500px;
     width: 500px;
@@ -14,4 +20,58 @@ form{
 }
 .details{
     margin: 1% 4% 2% 4%;
+}
+
+/*Header*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+header > a.login {
+    padding: 0 2%;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Footer*/ 
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.handler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.handler1{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.handler2{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.handler3 > p{
+    margin: 20% 0 0 0;
+    font-size: 10px;
+}
+.handler3{
+    display: flex;
+    align-content: flex-end;
+}
+.contact > a {
+    text-decoration: none;
+    color: black;
+}
+.footer-gap{
+    height: 50px;
+    width: 100%;
 }

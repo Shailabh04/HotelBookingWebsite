@@ -1,10 +1,39 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+/*Header*/
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+header > a {
+    padding: 0 2%;
+    text-decoration: none;
+    color: black;
+}
+
+/*Main*/
+
+main{
+    padding: 60px 0 41px 0;
+    display: flex;
+    flex-direction: column;
+}
 .images{
-    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 15% 0 15%;
 }
-.image{
+.images > a {
+    padding: 4%;
+}
+.image {
     height: 150px;
     width: 150px;
     padding: 4%;
@@ -16,4 +45,66 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.search-bar > input{
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 30%;
+}
+
+
+.view-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view-more > a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Footer*/
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.handler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.handler1{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.handler2{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.handler3 > p{
+    margin: 20% 0 0 0;
+    font-size: 10px;
+}
+.handler3{
+    display: flex;
+    align-content: flex-end;
+}
+.contact > a {
+    text-decoration: none;
+    color: black;
+}
+.footer-gap{
+    height: 50px;
+    width: 100%;
+}
+

@@ -1,3 +1,23 @@
+main{
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+main > ul >a{
+    text-decoration: none;
+}
+main > ul > a > b > li{
+    list-style: none;
+    color: black;
+    padding: 0 40px 0 10px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
 .image{
     height: 300px;
     width: 300px;
@@ -6,12 +26,89 @@
     height: 20px;
     width: 22px;
 }
-.hotel-listing > a > img{
-    height: 200px;
-    width: 250px;
-}
 .hotel-listing{
     margin: 2%;
     background-color: rgb(132, 136, 139);
-    width: 40%;
+    width: auto;
+}
+.hotel-listing > img{
+    height: 200px;
+    width: 250px;
+}
+.hotel-listing > a > .card-wrap > img {
+    height: 200px;
+    width: 250px;
+}
+.hotel-listing > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#map-view{
+    display: none;    
+}
+#list-view{
+    margin-bottom: 80px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+
+
+/*Header*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+header > a.login {
+    padding: 0 2%;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Footer*/ 
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.handler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.handler1{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.handler2{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.handler3 > p{
+    margin: 20% 0 0 0;
+    font-size: 10px;
+}
+.handler3{
+    display: flex;
+    align-content: flex-end;
+}
+.contact > a {
+    text-decoration: none;
+    color: black;
+}
+.footer-gap{
+    height: 50px;
+    width: 100%;
 }
