@@ -3,23 +3,65 @@ main{
     display: flex;
     flex-direction: column;
 }
-
-.image{
-    height: 500px;
-    width: 500px;
-}
 .social-logo{
     height: 20px;
     width: 22px;
 }
 .image{
-    margin: 2% 4% 0 4%;
+    max-height: 350px;
+    max-width: 350px;
+    padding: 2%;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+    border-right: 1px solid black;
+}
+
+.form-div{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
 }
 form{
-    margin: 0 4% 1% 4%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    width: fit-content;
+    height: fit-content;
+}
+form > div {
+    width: auto;
+    display: flex;
+}
+label {
+    width: 150px;
+}
+input {
+    width: 200px;
+}
+button {
+    margin-left: 150px;
+    padding: 2%;
+}
+
+h5{
+    font-family: cursive;
 }
 .details{
     margin: 1% 4% 2% 4%;
+}
+.img-form {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    border: 1px solid black;
 }
 
 /*Header*/
@@ -32,11 +74,13 @@ header{
     align-items: center;   
 }
 header > a.login {
-    padding: 0 2%;
+    margin: 0 2%;
     text-decoration: none;
     color: black;
 }
-
+header > a  {
+    margin-left: 1%;
+}
 
 /*Footer*/ 
 footer{
@@ -44,34 +88,33 @@ footer{
     width: 100%;
     bottom: 0;
 }
-.handler{
+.footer-wrap{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.handler1{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler2{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler3 > p{
-    margin: 20% 0 0 0;
-    font-size: 10px;
-}
-.handler3{
-    display: flex;
-    align-content: flex-end;
-}
+
 .contact > a {
     text-decoration: none;
     color: black;
 }
+
+.copyright { 
+    font-size: 10px;
+}
+
+.contact { 
+    margin-left: 2%;
+}
+
+.social-links{
+    margin-right: 2%;
+}
+
 .footer-gap{
     height: 50px;
     width: 100%;
 }
+

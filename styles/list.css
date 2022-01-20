@@ -5,12 +5,19 @@ main{
 }
 main > ul >a{
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 main > ul > a > b > li{
     list-style: none;
     color: black;
-    padding: 0 40px 0 10px;
 }
+.mv {
+    margin-left: 60px;
+}
+
+
+
 ul{
     display: flex;
     justify-content: center;
@@ -27,22 +34,29 @@ ul{
     width: 22px;
 }
 .hotel-listing{
+    display: flex;
     margin: 2%;
-    background-color: rgb(132, 136, 139);
+    background-color: lightgray;
     width: auto;
+    height: auto;
 }
 .hotel-listing > img{
     height: 200px;
     width: 250px;
 }
-.hotel-listing > a > .card-wrap > img {
+.hotel-listing > a > img{
     height: 200px;
     width: 250px;
 }
-.hotel-listing > a {
+.hl {
     text-decoration: none;
     color: black;
 }
+
+.content-wrap {
+    margin-left: 4%;
+}
+
 
 
 #map-view{
@@ -69,9 +83,12 @@ header{
     align-items: center;   
 }
 header > a.login {
-    padding: 0 2%;
+    margin: 0 2%;
     text-decoration: none;
     color: black;
+}
+header > a {
+    margin-left: 1%;
 }
 
 
@@ -81,34 +98,33 @@ footer{
     width: 100%;
     bottom: 0;
 }
-.handler{
+.footer-wrap{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.handler1{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler2{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler3 > p{
-    margin: 20% 0 0 0;
-    font-size: 10px;
-}
-.handler3{
-    display: flex;
-    align-content: flex-end;
-}
+
 .contact > a {
     text-decoration: none;
     color: black;
 }
+
+.copyright { 
+    font-size: 10px;
+}
+
+.contact { 
+    margin-left: 2%;
+}
+
+.social-links{
+    margin-right: 2%;
+}
+
 .footer-gap{
     height: 50px;
     width: 100%;
 }
+

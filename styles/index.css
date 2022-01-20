@@ -11,6 +11,10 @@ header{
     justify-content: space-between;
     align-items: center;   
 }
+header > img {
+    margin-left: 1%;
+}
+
 header > a {
     padding: 0 2%;
     text-decoration: none;
@@ -27,18 +31,47 @@ main{
 .images{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 15% 0 15%;
+    justify-content: space-evenly;
+    margin: 4% 0 4% 0;
 }
-.images > a {
-    padding: 4%;
-}
-.image {
-    height: 150px;
+.cards {
+    position: relative;
     width: 150px;
-    padding: 4%;
-    border-radius: 25%;
+    height: 150px;
 }
+
+.image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.img-overlay:hover{
+    opacity: 1;
+}
+
+.inactive{
+    pointer-events: none;
+}
+
 .search-bar{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
     background-position: center;
@@ -52,13 +85,13 @@ main{
 }
 .search-bar > input{
     border: 1px solid transparent;
+    outline: none;
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
     width: 30%;
 }
-
 
 .view-more{
     display: flex;
@@ -76,33 +109,31 @@ footer{
     width: 100%;
     bottom: 0;
 }
-.handler{
+.footer-wrap{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.handler1{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler2{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler3 > p{
-    margin: 20% 0 0 0;
-    font-size: 10px;
-}
-.handler3{
-    display: flex;
-    align-content: flex-end;
-}
+
 .contact > a {
     text-decoration: none;
     color: black;
 }
+
+.copyright { 
+    font-size: 10px;
+}
+
+.contact { 
+    margin-left: 2%;
+}
+
+.social-links{
+    margin-right: 2%;
+}
+
 .footer-gap{
     height: 50px;
     width: 100%;

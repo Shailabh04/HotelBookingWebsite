@@ -20,29 +20,37 @@
         <!--Conttent Section-->
         <main>
             <ul>
-                <a href="#list-view"><b><li>List View</li></b></a>
-                <a href="#map-view"><b><li>Map View</li></b></a>
+                <a href="#list-view"><b><li class="lv">List View</li></b></a>
+                <a href="#map-view"><b><li class="mv">Map View</li></b></a>
             </ul>
             <div id="list-view">
-                <div class="hotel-listing">
-                    <a href="detail.html"><div class="card-wrap"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" srcset="">
-                    <h3>Radisson Blu Hotel</h3>
-                    <p>2 Star</p>
-                    <p>New Delhi</p></div></a>
-                </div>
+                <a class="hl" href="detail.html">
+                    <div class="hotel-listing">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" srcset="">
+                            <div class="content-wrap">
+                                <h3>Radisson Blu Hotel</h3>
+                                <p>2 Star</p>
+                                <p>New Delhi</p>
+                            </div>
+                    </div>
+                </a>
 
                 <div class="hotel-listing">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Radisson Blu Hotel" srcset="">
-                    <h3>The Lalit New Dehi</h3>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p>
+                    <div class="content-wrap">
+                        <h3>The Lalit New Dehi</h3>
+                        <p>4.5 Star</p>
+                        <p>New Delhi</p>
+                    </div>
                 </div>
 
                 <div class="hotel-listing">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Radisson Blu Hotel" srcset="">
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p>
+                    <div class="content-wrap">
+                        <h3>Taj Palace</h3>
+                        <p>4.0 Star</p>
+                        <p>New Delhi</p>
+                    </div>
                 </div>
                 
             </div>
@@ -55,25 +63,18 @@
         <div class="footer-gap"></div>
         <!--Footer Section-->
         <footer>
-            <div class="handler">
-                <div class="handler1">
-                    <div class="contact"><a href="contact.html" target="_self">Contact Us</a></div>  
-                </div>
-    
-                
-                <div class="handler3">
-                    <p class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</p>
-                </div>
-    
-                <div class="handler2">
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/" target="_blank"><img class="social-logo" src="assests/images/facebook.png" alt="facebook" srcset=""></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img class="social-logo" src="assests/images/instagram.png" alt="instagram" srcset=""></a>
-                        <a href="https://twitter.com/" target="_blank"><img class="social-logo" src="assests/images/twitter.png" alt="twitter" srcset=""></a> 
-                    </div>
+            <div class="footer-wrap">
+                <div class="contact"><a href="contact.html" target="_self">Contact Us</a></div>  
+
+                <p class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</p>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><img class="social-logo" src="assests/images/facebook.png" alt="facebook" srcset=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="social-logo" src="assests/images/instagram.png" alt="instagram" srcset=""></a>
+                    <a href="https://twitter.com/" target="_blank"><img class="social-logo" src="assests/images/twitter.png" alt="twitter" srcset=""></a> 
                 </div>
             </div>
-            </footer>
+        </footer>
     </div>
 </body>
 </html>

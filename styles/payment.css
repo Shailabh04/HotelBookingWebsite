@@ -1,37 +1,47 @@
 .image{
-    height: 500px;
-    width: 500px;
+    max-height: 300px;
+    max-width: 270px;
 }
 .social-logo{
     height: 20px;
     width: 22px;
 }
 .details{
+    display: flex;
+    align-items: center;
     background-color: rgb(132, 136, 139);
     height: 20%;
     width: 50%;
     margin: 2% auto;
 }
-.pay-det{
-    margin: 2%;
+.card-details {
+   margin-left: 4%;  
 }
-.tarrif-det{
-    margin: 2%;
+
+.payment-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 1% 2%;
+    margin: 0 2%;
+    background-color: rosybrown;
+}
+b{
+    font-family: cursive;
+}
+.pay {
+    text-decoration: none;
+    color: black;
 }
 
 main{
     padding: 60px 0 0 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     top: 0;
     bottom: 0;
-}
-main > a {
-    text-decoration: none;
-    color: black;
 }
 
 /*Header*/
@@ -44,9 +54,12 @@ header{
     align-items: center;   
 }
 header > a.login {
-    padding: 0 2%;
+    margin: 0 2%;
     text-decoration: none;
     color: black;
+}
+header > a {
+    margin-left: 1%;
 }
 
 
@@ -56,34 +69,33 @@ footer{
     width: 100%;
     bottom: 0;
 }
-.handler{
+.footer-wrap{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.handler1{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler2{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-}
-.handler3 > p{
-    margin: 20% 0 0 0;
-    font-size: 10px;
-}
-.handler3{
-    display: flex;
-    align-content: flex-end;
-}
+
 .contact > a {
     text-decoration: none;
     color: black;
 }
+
+.copyright { 
+    font-size: 10px;
+}
+
+.contact { 
+    margin-left: 2%;
+}
+
+.social-links{
+    margin-right: 2%;
+}
+
 .footer-gap{
-    height: 50px;
+    height: 80px;
     width: 100%;
 }
+
