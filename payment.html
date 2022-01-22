@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/payment.css">
     <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Payment</title>
 </head>
 <body>
-    <div class="main-container">
+    <div class="contain-er">
 
         <!--Header Section-->
-        <header>
+        <header class="head">
             <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
-            <a class="login" href="login.html" target="_self">Login</a>
+            <a class="login" href="#" target="_self"><button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#log-modal">LOGIN</button></a>
         </header>
 
         <!--Content Section-->
@@ -44,7 +45,7 @@
                     <p><b>Tarrif Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights</p>
                     <p><b>Number of Adults:</b> Rs.10000</p>
                 </div>
-                <a class="pay" href="#"><p>Pay Now</p></a>
+                <a class="pay" href="#"><p><button type="button" class="btn btn-success btn-sm" disabled>Pay Now</button></p></a>
             </div>
         </main>
 
@@ -53,7 +54,7 @@
         <!--Footer Section-->
         <footer>
             <div class="footer-wrap">
-                <div class="contact"><a href="contact.html" target="_self">Contact Us</a></div>  
+                <div class="contact"><a href="#" target="_self"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal">Contact Us</button></a></div>  
 
                 <p class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</p>
 
@@ -65,5 +66,63 @@
             </div>
         </footer>
     </div>
+
+    <!--MODAL-->
+    <div class="modal" id="log-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Please Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" action="/" method="GET">
+                    <div class="modal-labels">
+                        <label for="uname">Username: </label><br><br>
+                        <label for="pwd">Password: </label>
+                    </div>
+                    <div class="modal-inputs">
+                        <input type="text" name="uname" placeholder="Enter Username" required autocomplete="off"><br><br>
+                        <input type="password" name="pwd" placeholder="Enter Password" required autocomplete="off"><br>
+                    </div>
+                    
+               
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+
+      <!--CONTACT MODAL-->
+      <div class="modal" id="contact-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Get in touch</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will get back to you.</p>
+
+                <form action="/" method="GET">
+                    Email: <input type="email" placeholder="Enter your email id" name="email" required autocomplete="off"><br>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

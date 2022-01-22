@@ -16,6 +16,7 @@
 }
 .card-details {
    margin-left: 4%;  
+   justify-content: center;
 }
 
 .payment-details{
@@ -37,15 +38,24 @@ b{
 
 main{
     padding: 60px 0 0 0;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     top: 0;
     bottom: 0;
+    background-color: #e0e0e0;
+}
+.contain-er{
+    min-height: 700px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Header*/
-header{
+header.head{
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,12 +63,12 @@ header{
     justify-content: space-between;
     align-items: center;   
 }
-header > a.login {
+header.head > a.login {
     margin: 0 2%;
     text-decoration: none;
     color: black;
 }
-header > a {
+header.head > a  {
     margin-left: 1%;
 }
 
@@ -82,11 +92,12 @@ footer{
     color: black;
 }
 
-.copyright { 
+p.copyright { 
     font-size: 10px;
+    margin-bottom: 0;
 }
 
-.contact { 
+div.contact { 
     margin-left: 2%;
 }
 
@@ -95,7 +106,7 @@ footer{
 }
 
 .footer-gap{
-    height: 80px;
+    height: 50px;
     width: 100%;
 }
 

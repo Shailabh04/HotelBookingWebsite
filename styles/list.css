@@ -2,27 +2,26 @@ main{
     padding: 60px 0 0 0;
     display: flex;
     flex-direction: column;
+    background-color: #e0e0e0;
 }
-main > ul >a{
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-}
-main > ul > a > b > li{
+
+main > ul > li {
     list-style: none;
     color: black;
 }
 .mv {
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 
 
-ul{
+
+main > ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
+    margin-top: 2%;
 }
 
 .image{
@@ -48,27 +47,39 @@ ul{
     height: 200px;
     width: 250px;
 }
-.hl {
+#list-view > .hl {
     text-decoration: none;
     color: black;
 }
-
+.hotel-listing:hover{
+    background-color: rosybrown;
+}
 .content-wrap {
-    margin-left: 4%;
+    margin: 4%;
+    
 }
 
-
-
-#map-view{
-    display: none;    
-}
 #list-view{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     margin-left: 40px;
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 80px;
     row-gap: 20px;
+}
+
+#pills-home{
+    padding-bottom: 80px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+#pills-home > .hl {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -82,12 +93,20 @@ header{
     justify-content: space-between;
     align-items: center;   
 }
-header > a.login {
+
+header > .header_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .header_wrap > a.login {
     margin: 0 2%;
     text-decoration: none;
     color: black;
 }
-header > a {
+
+header > .header_wrap > a {
     margin-left: 1%;
 }
 
@@ -111,8 +130,9 @@ footer{
     color: black;
 }
 
-.copyright { 
+p.copyright { 
     font-size: 10px;
+    margin-bottom: 0;
 }
 
 .contact { 

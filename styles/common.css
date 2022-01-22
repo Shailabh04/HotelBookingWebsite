@@ -27,3 +27,10 @@ header{
 footer{
     background-color: rosybrown;
 }
+
+/*MODAL*/
+.modal-form{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
