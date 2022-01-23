@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
     <title>Detail</title>
@@ -25,7 +26,30 @@
         <main>
             <div class="img-form">
                 <div class="img-div">
-                    <img class="details_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" srcset="">
+                    
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100 details_image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" class="d-block w-100 details_image" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg" class="d-block w-100 details_image" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                   <!-- <img class="details_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" srcset=""> -->
                 </div>
                 <div class="main-form-div">
                     <form class="main-form" action="payment.html" method="GET">
@@ -58,7 +82,11 @@
             <div class="details">
                 <h2>Radisson Blu Hotel</h2>
                 <h5 class="h5-data">RATING</h5>
-                <P>5 Star</P>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
                 <h5 class="h5-data">AMANITIES</h5>
                 <ul>
                     <li>Room Service</li>

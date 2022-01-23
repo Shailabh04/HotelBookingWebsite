@@ -110,3 +110,41 @@ div.contact {
     width: 100%;
 }
 
+@media only screen and (max-width : 768px) {
+    div.details{
+        height: 200px;
+        width: 600px;
+        margin-left:8%;
+    }
+}
+
+@media only screen and (max-width : 576px) {
+    .contain-er{
+        display: flex;
+    }
+    div.details{
+        flex-direction: column;
+        width: 270px;
+        height: 400px;
+        margin: 5%auto;
+    }
+    .card-details{
+        margin-top: 5%;
+    }
+    div.payment-details {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+    }
+    .pay-det{
+        margin-left: 5%;
+    }
+    .tarrif-det{
+        margin-left: 5%;
+    }
+    .pay{
+        align-items: center;
+        justify-content: center;
+        margin: 2% auto;
+    }
+}

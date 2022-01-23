@@ -2,6 +2,9 @@
 *{
     font-family: 'Ubuntu', sans-serif;
 }
+header{
+    z-index: 1000;
+}
 html, body{
     margin: 0;
     padding: 0;

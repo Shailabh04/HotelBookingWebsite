@@ -1,3 +1,8 @@
+/*$desktop: 1200px;
+$laptop: 992px;
+$tablet: 768px;
+$phone: 480px;*/
+
 /*Header*/
 
 header{
@@ -144,3 +149,26 @@ p.copyright {
 }
 
 /*MODAL IS IN THE COMMON.CSS FILE*/
+
+
+@media only screen and (max-width : 768px) {
+    .images {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5%;
+    }
+    .view_more{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width : 576px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cards{
+        margin-top: 25px;
+    }
+}

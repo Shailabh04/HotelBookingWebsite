@@ -125,7 +125,7 @@ footer{
     align-items: center;
 }
 
-.contact > a {
+.footer-wrap > .contact > a {
     text-decoration: none;
     color: black;
 }
@@ -147,4 +147,61 @@ p.copyright {
     height: 50px;
     width: 100%;
 }
+@media only screen and (max-width : 768px) {
+    #pills-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 4%;
+    }
+    .hotel-listing{
+        margin-right: 5%;
+    }
+    #pills-profile, .map-img{
+        width: 700px;
+    }
+    .contact{
+        margin-left: 4%;
+    }
+}
 
+
+@media only screen and (max-width : 576px) {
+   nav.nav-pills{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       width: 100%;
+   }
+   
+    .hotel-listing{
+       flex-direction: column;
+       width: auto;  
+       height: auto;     
+   }
+   .hotel-listing > a > img{
+    height: 300px;
+    width: 350px;
+    }
+    
+    .hotel-listing > img{
+        height: 300px;
+        width: 350px;
+    }
+    #pills-home{
+        width: 350px;
+        justify-content: center;
+        margin-left: 12%;
+    }
+    #pills-profile, .map-img{
+        width: 550px;
+    }
+    #pills-profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.tab-container{
+        width: 560px;
+    }
+}

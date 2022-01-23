@@ -122,3 +122,34 @@ p.copyright {
 .btn{
     margin-left: 0;
 }
+
+@media only screen and (max-width : 768px){
+    .input{
+        width:80px;
+        margin-left: -60px;
+    }
+    
+}
+
+@media only screen and (max-width : 576px) {
+    .img-form{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+
+    }
+    .main-form-div{
+        height: 500px;
+    }
+    .main-form{
+        display: flex;
+        flex-direction: column;        
+    }
+    #carouselExampleControls{
+        height: auto;
+        width: auto;
+    }
+    .details{
+        margin-top: 200px;
+    }
+}
