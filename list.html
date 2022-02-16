@@ -8,18 +8,14 @@
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>List</title>
 </head>
 <body>
     <div class="main-container">
 
         <!--Header Section-->
-        <header>
-            <div class="header_wrap">
-                <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
-                <a class="login" href="#" target="_self"><button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#log-modal">LOGIN</button></a>
-            </div>
-        </header>
+        <my-header></my-header>
         
         <!--Conttent Section-->
         <main>
@@ -132,20 +128,9 @@
         </main>
 
         <div class="footer-gap"></div>
+    
         <!--Footer Section-->
-        <footer>
-            <div class="footer-wrap row">
-                <div class="contact "><a href="#" target="_self"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal">Contact Us</button></a></div>  
-
-                <p class="copyright  ">&copy; 2020 ROOM SEARCH PVT. LTD.</p>
-
-                <div class="social-links ">
-                    <a href="https://www.facebook.com/" target="_blank"><img class="social-logo" src="assests/images/facebook.png" alt="facebook" srcset=""></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="social-logo" src="assests/images/instagram.png" alt="instagram" srcset=""></a>
-                    <a href="https://twitter.com/" target="_blank"><img class="social-logo" src="assests/images/twitter.png" alt="twitter" srcset=""></a> 
-                </div>
-            </div>
-        </footer>
+        <my-footer></my-footer>
     </div>
     
     <!--MODAL-->
@@ -206,5 +191,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script type="module" src="/scripts/list.js"></script>
 </body>
 </html>

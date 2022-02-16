@@ -34,7 +34,7 @@ main > ul{
 }
 .hotel-listing{
     display: flex;
-    margin: 2%;
+    margin: 0;
     background-color: lightgray;
     width: auto;
     height: auto;
@@ -50,7 +50,10 @@ main > ul{
 #list-view > .hl {
     text-decoration: none;
     color: black;
+    margin: 0px;
+    padding: 0px;
 }
+
 .hotel-listing:hover{
     background-color: rosybrown;
 }

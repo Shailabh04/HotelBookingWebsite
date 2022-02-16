@@ -13,13 +13,9 @@
 <body>
     <div class="contain-er">
 
-        <!--Header Section-->
-        <header>
-            <div class="header_wrap">
-                <img class="logo" src="assests/images/logo.png" alt="logo">
-                <a href="#" target="_self"><button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#log-modal">LOGIN</button></a>
-            </div>
-        </header>
+        <!--Header Template-->
+        <my-header></my-header>
+
 
         <!--Content Section-->
         <main>
@@ -73,14 +69,12 @@
 
              <!--part 3-->
              <div class="images">
-                <a href="list.html">
                     <div class="cards">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="" class="image">
                         <div class="img-overlay">
                             <div class="image-title">Chennai</div>
                         </div>
                     </div>
-                </a>
 
                     
                 
@@ -120,23 +114,11 @@
         </main>
 
         <div class="footer-gap"></div>
-
-        <!--Footer Section-->
-        <footer>
-            <div class="footer-wrap">
-                <div class="contact"><a href="#" target="_self"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal">Contact Us</button></a></div>  
-
-                <p class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</p>
-
-                <div class="social-links">
-                    <a href="https://www.facebook.com/" target="_blank"><img class="social-logo" src="assests/images/facebook.png" alt="facebook" srcset=""></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="social-logo" src="assests/images/instagram.png" alt="instagram" srcset=""></a>
-                    <a href="https://twitter.com/" target="_blank"><img class="social-logo" src="assests/images/twitter.png" alt="twitter" srcset=""></a> 
-                </div>
-            </div>
-        </footer>
+    
+        
+        <!--Footer Template-->
+        <my-footer></my-footer>
     </div>
-
     <!--LOGIN MODAL-->
     <div class="modal" id="log-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -195,5 +177,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script type="module" src="/scripts/index.js"></script>
 </body>
 </html>
